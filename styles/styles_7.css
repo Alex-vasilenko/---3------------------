@@ -1,0 +1,485 @@
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter-Medium.otf);
+}
+@font-face {
+  font-family: "Rounded Elegance";
+  src: url(./fonts/Rounded_Elegance.ttf);
+}
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+:root {
+  --primary-color-gray: rgba(0, 0, 0, 0.3); /* серый */
+  --primary-color-darkgray: rgba(0, 0, 0, 0.7); /* 70% */
+  --primary-color-black: #191a19; /* Dark */
+  --primary-color-lightgreen: #4e9f3d; /* Green 1 */
+  --primary-color-green: #1e5128; /* Green 2 */
+  --primary-color-bgc: #f8f8f8; /* Фон */
+  --primary-color-orange: #e17d21; /* Кнопки */
+  --primary-color-olive: #d8e9a8; /* D8E9A8 */
+}
+
+body {
+  font-family: "Rounded Elegance", sans-serif;
+  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
+
+  background-color: var(--primary-color-bgc);
+  color: var(--primary-color-darkgray);
+  font-size: 18px;
+  background-color: #f5f5f5;
+}
+
+*:focus {
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+span_olive {
+  color: var(--primary-color-lightgreen);
+  font-family: inherit;
+}
+
+.btn {
+  padding: 0.875em 4.875em;
+
+  color: #fff;
+  background-color: var(--primary-color-orange);
+  font-weight: 500;
+  font-size: 1.375rem;
+  border-radius: 0.3125em;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Rounded Elegance", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 92px;
+  color: var(--primary-color-black);
+
+  margin: 0;
+}
+
+h2 {
+  font-family: "Rounded Elegance";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 57px;
+}
+
+h3 {
+  font-family: "Rounded Elegance";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: 0.03em;
+}
+
+h4 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.text-specs {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 150%;
+
+  letter-spacing: 0.01em;
+}
+
+.text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+}
+.text_sidebar {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/*                               */
+.wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 1500px;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*                              ./page */
+
+/*                              header */
+.header {
+  width: 100%;
+  height: 120px;
+  background-color: #fff;
+}
+.header .wrapper {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header__logo-link {
+}
+.header__logo-img {
+  width: 180px;
+  height: 66px;
+  background-image: url(../img/logo_header.svg);
+}
+.header-nav {
+  display: flex;
+  gap: 30px;
+
+  min-width: 611px;
+  margin-left: 45px;
+}
+.header-nav__link {
+}
+.header__search-box {
+  display: flex;
+  align-items: center;
+
+  max-width: 300px;
+  width: 100%;
+
+  background: #ffffff;
+
+  border: 1px solid var(--primary-color-gray);
+  border-radius: 10px;
+}
+.search-box__search {
+  width: 100%;
+
+  margin-left: 10px;
+  font-size: 1rem;
+  border: none;
+  font-family: "Inter";
+}
+.search-box__leans {
+  width: 33px;
+  height: 33px;
+  margin-right: 10px;
+  background-image: url(../img/search_leans.svg);
+}
+.links {
+  width: 240px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+}
+.header__links {
+}
+.links__icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 95px;
+  height: 57px;
+}
+
+.link-icon {
+  width: 25px;
+  height: 25px;
+}
+.link-icon__vb {
+  background: url(../img/icon_Viber.svg);
+}
+.link-icon__tg {
+  background: url(../img/icon_Telegram.svg);
+}
+.link-icon__wts {
+  background: url(../img/icon_Whatsapp.svg);
+}
+.link-icon__tel {
+  background: url(../img/icon_phone.svg);
+}
+.links__tel {
+  margin-left: 10px;
+}
+.link__phone {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+.link__callBack {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+}
+
+/*                                     section-1          */
+
+.section-1 {
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+.section-1 .wrapper {
+  align-items: flex-start;
+  position: relative;
+}
+.location {
+  display: flex;
+  gap: 10px;
+}
+.location__pos1 {
+}
+.location__pos2 {
+}
+.section-1__heding {
+  margin-top: 30px;
+  margin-bottom: 40px;
+
+  font-family: "Rounded Elegance";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 57px;
+  text-transform: uppercase;
+  color: var(--primary-color-black);
+}
+.section-1__text {
+  margin-bottom: 30px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--primary-color-darkgray);
+}
+.section-1__card-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+}
+
+.section-1__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+
+  width: 100%;
+  max-width: 480px;
+  height: 420px;
+  padding: 20px 20px 15px 20px;
+
+  background-color: #fff;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.section-1-card__img {
+  width: 440px;
+  height: 265px;
+  background-image: url(../img/main_section-6.jpg);
+
+  border-radius: 5px;
+}
+.section-1-card__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.section-1-card__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 210px;
+  width: 100%;
+  height: 133px;
+}
+.section-1-card__text-name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: var(--primary-color-black);
+}
+.section-1-card__type-name {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  background-color: var(--primary-color-darkgray);
+  padding: 3px 8px;
+  border-radius: 5px;
+  width: 120px;
+}
+.section-1-card__price {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 30px;
+  color: var(--primary-color-green);
+}
+.section-1-card__down {
+  display: flex;
+  align-items: flex-end;
+}
+.section-1-card__btn {
+  max-width: 220px;
+  padding: 0.875em 2.875em;
+}
+.section-1__link-down {
+  margin-top: 30px;
+  position: absolute;
+  bottom: -20px;
+  left: 750px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+  color: var(--primary-color-black);
+}
+
+/*                                  footer            */
+.footer {
+  background-color: var(--primary-color-black);
+  color: #fff;
+}
+.footer .wrapper {
+  max-width: 1920px;
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+}
+.footer-nav__link {
+}
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-logo__text {
+  font-family: "Rounded Elegance";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 57px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.footer-logo__disclaimer {
+  margin-top: 30px;
+  margin-bottom: 70px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+}
+.footer-logo__link {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  letter-spacing: 0.02em;
+  text-decoration-line: underline;
+
+  text-align: center;
+}
+.footer__links {
+  width: 100%;
+  max-width: 300px;
+}
+.footer__search-box {
+  background-color: var(--primary-color-black);
+  border: solid 1px #fff;
+}
+.footer .search-box__search {
+  background-color: var(--primary-color-black);
+  color: #fff;
+}
+.footer .search-box__leans {
+  background-image: url(../img/search_leans_white.svg);
+}
+.links {
+}
+.footer__link {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column-reverse;
+  gap: 40px;
+  align-items: flex-end;
+}
+
+.footer .links__icon {
+  max-width: 130px;
+}
+.link-icon {
+}
+.footer .link-icon__vb {
+  background-image: url(../img/icon_viber_white.svg);
+}
+.footer .link-icon__tg {
+  background-image: url(../img/icon_Telegram_white.svg);
+}
+.footer .link-icon__wts {
+  background-image: url(../img/icon_Whatsapp_white.svg);
+}
+.footer .link-icon__tel {
+  background-image: url(../img/icon_phone_white.svg);
+}
+.footer .links__tel {
+  display: flex;
+  gap: 20px;
+  max-width: 160px;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.link__phone {
+}
+.link__callBack {
+}
